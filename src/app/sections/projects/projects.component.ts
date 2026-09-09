@@ -18,8 +18,8 @@ export class ProjectsComponent {
     {
       nome: 'RatingUp',
       descricao: 'Plataforma web criada com o propósito de reduzir a lacuna no aprendizado de xadrez na população brasileira, tornando o ensino do jogo mais acessível, moderno e envolvente.',
-      imagem: 'assets/img/projects/ratingup.png',
-      githubUrl: 'https://github.com/SEU-USUARIO/ratingup',
+      imagem: '../../../assets/img/ratingup.png',
+      githubUrl: 'https://github.com/Mateus-Rocha1/ratingup',
       tecnologias: ['Angular', 'Typescript', 'Java', 'Spring', 'MinIO', 'Docker', 'PostgreSQL', 'Swagger', 'RobotFramework', 'NGINX']
     }
     // adicione mais projetos aqui, seguindo o mesmo formato
