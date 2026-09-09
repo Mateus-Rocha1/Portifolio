@@ -17,10 +17,10 @@ export class ProjectsComponent {
   projetos: Project[] = [
     {
       nome: 'RatingUp',
-      descricao: 'Plataforma web criada com o propósito de reduzir a lacuna no aprendizado de xadrez na população brasileira, tornando o ensino do jogo mais acessível, moderno e envolvente.',
+      descricao: 'Plataforma web desenvolvida para tornar o aprendizado de xadrez mais acessível, oferecendo recursos para auxiliar iniciantes no estudo e na evolução no jogo. O projeto foi desenvolvido como uma aplicação full-stack, com frontend em Angular e backend em Java/Spring.',
       imagem: 'assets/img/ratingup.png',
       githubUrl: 'https://github.com/Mateus-Rocha1/ratingup',
-      tecnologias: ['Angular', 'Typescript', 'Java', 'Spring', 'MinIO', 'Docker', 'PostgreSQL', 'Swagger', 'RobotFramework', 'NGINX']
+      tecnologias: ['Angular', 'Typescript', 'Java', 'Spring Boot', 'MinIO', 'Docker', 'PostgreSQL', 'Swagger', 'Robot Framework', 'NGINX']
     },
     
     {
