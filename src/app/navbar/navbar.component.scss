@@ -1,0 +1,22 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: var(--color2);
+  z-index: 100;
+
+  a {
+    color: var(--color5);
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: var(--color4);
+    }
+  }
+}

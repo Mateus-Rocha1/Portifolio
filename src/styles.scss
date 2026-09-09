@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color1: #6f2216; // fundo mais escuro
+  --color2: #934334;
+  --color3: #b76353;
+  --color4: #db8471;
+  --color5: #ffa48f; // destaque/texto claro
+}
+
+html {
+  scroll-behavior: smooth; // faz o scroll suave ao clicar na navbar
+}
+
+body {
+  margin: 0;
+  background-color: var(--color1);
+  color: var(--color5);
+  font-family: Arial, sans-serif;
+}
