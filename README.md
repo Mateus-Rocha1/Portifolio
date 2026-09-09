@@ -1,27 +1,95 @@
-# Portfolio
+# Portfólio Pessoal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+Portfólio pessoal desenvolvido em Angular, com o objetivo de reunir em um único lugar minha apresentação profissional, currículo, experiências e projetos individuais, servindo como cartão de visita para recrutadores, colegas e qualquer pessoa interessada em conhecer meu trabalho.
 
-## Development server
+🔗 **Acesse online:** [mateus-rocha1.github.io/Portifolio](https://mateus-rocha1.github.io/Portifolio/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🛠️ Tecnologias utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **[Angular](https://angular.io/)** — framework principal da aplicação
+- **TypeScript** — linguagem de desenvolvimento
+- **SCSS** — estilização com variáveis de tema (paleta de cores centralizada)
+- **[angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages)** — automação de deploy para o GitHub Pages
+- **GitHub Pages** — hospedagem estática do site
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 📁 Estrutura do projeto
 
-## Running unit tests
+```
+src/
+├── app/
+│   ├── navbar/                  # Barra de navegação fixa com links por âncora
+│   ├── sections/
+│   │   ├── hero/                # Seção Início (foto, nome, cargo, redes sociais)
+│   │   ├── about/                # Seção Sobre mim
+│   │   ├── resume/                # Seção Currículo (download PT/EN)
+│   │   ├── experience/          # Seção Experiências (lista dinâmica via *ngFor)
+│   │   └── projects/             # Seção Projetos (carrossel de cards)
+│   ├── app.component.html       # Composição das seções na página única
+│   └── app.module.ts
+├── assets/
+│   ├── img/                      # Fotos e imagens de capa dos projetos
+│   └── docs/                     # Currículos em PDF (PT/EN)
+└── styles.scss                    # Variáveis globais de tema e estilos base
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Cada seção corresponde a um componente Angular independente, o que facilita manutenção e evolução isolada de cada parte do site.
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🚀 Como rodar localmente
 
-## Further help
+Pré-requisitos: [Node.js](https://nodejs.org/) e [Angular CLI](https://angular.io/cli) instalados.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+# clone o repositório
+git clone https://github.com/mateus-rocha1/Portifolio.git
+cd Portifolio
+
+# instale as dependências
+npm install
+
+# rode o servidor de desenvolvimento
+ng serve
+```
+
+Depois disso, acesse `http://localhost:4200` no navegador. A aplicação recarrega automaticamente a cada alteração salva nos arquivos.
+
+---
+
+## 📦 Como fazer o deploy
+
+O deploy é feito para o GitHub Pages através do `angular-cli-ghpages`, que builda o projeto em modo produção e publica o resultado na branch `gh-pages`.
+
+```bash
+ng build --configuration production --base-href=/Portifolio/
+npx angular-cli-ghpages --dir=dist/portfolio
+```
+
+Ou, de forma simplificada, usando o script configurado no `package.json`:
+
+```bash
+npm run deploy
+```
+
+Após alguns minutos, as alterações ficam disponíveis em [mateus-rocha1.github.io/Portifolio](https://mateus-rocha1.github.io/Portifolio/).
+
+---
+
+## 📄 Seções do site
+
+1. **Início** — foto de perfil, nome, cargo e ícones de redes sociais (GitHub, LinkedIn, Instagram, e-mail).
+2. **Sobre mim** — apresentação pessoal e profissional, formação, experiências e stack técnica.
+3. **Currículo** — botões de download do currículo em português e inglês.
+4. **Experiências** — histórico profissional e acadêmico, listado dinamicamente a partir de um array de dados.
+5. **Projetos** — carrossel de projetos individuais, com descrição, imagem de capa, badges de tecnologias e link para o repositório no GitHub.
+
+---
+
+## 👤 Autor
+
+**Mateus Pinheiro da Rocha**
+[GitHub](https://github.com/mateus-rocha1) · [LinkedIn](https://www.linkedin.com/in/mateus-pinheiro-da-rocha-5937a437b)
