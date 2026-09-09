@@ -18,9 +18,17 @@ export class ProjectsComponent {
     {
       nome: 'RatingUp',
       descricao: 'Plataforma web criada com o propósito de reduzir a lacuna no aprendizado de xadrez na população brasileira, tornando o ensino do jogo mais acessível, moderno e envolvente.',
-      imagem: '../../../assets/img/ratingup.png',
+      imagem: 'assets/img/ratingup.png',
       githubUrl: 'https://github.com/Mateus-Rocha1/ratingup',
       tecnologias: ['Angular', 'Typescript', 'Java', 'Spring', 'MinIO', 'Docker', 'PostgreSQL', 'Swagger', 'RobotFramework', 'NGINX']
+    },
+    
+    {
+      nome: 'Portfolio Pessoal',
+      descricao: 'Portfólio pessoal desenvolvido em Angular, com o objetivo de reunir em um único lugar minha apresentação profissional, currículo, experiências e projetos individuais, servindo como cartão de visita para recrutadores, colegas e qualquer pessoa interessada em conhecer meu trabalho.',
+      imagem: 'assets/img/portfolio.png',
+      githubUrl: 'https://github.com/Mateus-Rocha1/Portifolio',
+      tecnologias: ['Angular', 'Typescript', 'SCSS', 'angular-cli-ghpages ']
     }
     // adicione mais projetos aqui, seguindo o mesmo formato
   ];

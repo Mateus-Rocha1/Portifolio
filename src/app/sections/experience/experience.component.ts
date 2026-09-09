@@ -15,29 +15,30 @@ interface Experience {
 })
 export class ExperienceComponent {
   experiencias: Experience[] = [
+
     {
-      cargo: '',
-      periodo: '',
-      local: 'Laboratório de Visão Computacional e Inteligência Artificial (VICIA)',
-      descricao: ''
+      cargo: 'Desenvolvedor Full-stack',
+      periodo: 'Março 2026 - atual',
+      local: ' Laboratório de Visão Computacional e Inteligência Artificial (VICIA) - IFCE',
+      descricao: 'desenvolvimento web com Spring Boot, Angular e AWS',
+      historico: [
+        { cargo: 'Desenvolvedor Backend', periodo: 'Março 2026 - Julho 2026' },
+        { cargo: 'Desenvolvedor Full-stack', periodo: 'Julho 2026 - atual' }
+      ]
     },
 
     {
-      cargo: '',
-      periodo: '',
-      local: 'Laboratório de Telemática, Acessibilidade e Projetos Educacionais (LTAP)',
-      descricao: '',
-      historico: [
-        { cargo: '', periodo: '' },
-        { cargo: '', periodo: '' }
-      ]
+      cargo: 'Desenvolvedor Full-stack',
+      periodo: 'Agosto 2026 - atual',
+      local: 'Núcleo de Desenvolvimento de Software (NDS) - IFCE',
+      descricao: 'desenvolvimento web com .NET, Angular'
     },
-    
+
     {
-      cargo: '',
-      periodo: '',
-      local: '',
-      descricao: ''
+      cargo: 'Desenvolvedor Backend',
+      periodo: 'Agosto 2026 - atual',
+      local: 'Laboratório de Telemática, Acessibilidade e Projetos Educacionais (LTAP) - IFCE',
+      descricao: 'desenvolvimento web com Spring Boot'
     }
   ];
 }
