@@ -1,8 +1,109 @@
-.section {
+.projects {
   min-height: 100vh;
+  padding: 6rem 2rem 4rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-top: 4rem; // compensa a navbar fixa
-  background-color: #b76353;
+
+  &__title {
+    font-size: 2rem;
+    color: var(--color5);
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+  }
+
+  &__carousel {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  &__arrow {
+    background: none;
+    border: none;
+    color: var(--color5);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color3);
+    }
+  }
+
+  &__card {
+    flex: 1;
+    background-color: transparent;
+    border: 2px solid var(--color4);
+    border-radius: 16px;
+    padding: 2rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+
+    h3 {
+      color: var(--color5);
+      font-size: 1.6rem;
+      margin: 0;
+    }
+
+    a {
+      color: var(--color5);
+      font-size: 1.6rem;
+
+      &:hover {
+        color: var(--color3);
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__descricao {
+    flex: 1;
+    min-width: 240px;
+    color: var(--color5);
+    line-height: 1.6;
+  }
+
+  &__imagem {
+    width: 260px;
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+}
+
+.badge {
+  background-color: var(--color3);
+  color: var(--color1);
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .projects__body {
+    flex-direction: column;
+  }
 }
