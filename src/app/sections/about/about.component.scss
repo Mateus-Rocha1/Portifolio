@@ -1,8 +1,62 @@
-.section {
+.about {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-top: 4rem; // compensa a navbar fixa
-  background-color:  #6f2216;
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    color: var(--color5);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__quote {
+    font-style: italic;
+    color: var(--color4);
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    max-width: 1000px;
+    text-align: left;
+  }
+
+  &__photo img {
+    width: 260px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid var(--color4);
+  }
+
+  &__text {
+    flex: 1;
+    min-width: 280px;
+
+    h3 {
+      color: var(--color4);
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: var(--color5);
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }

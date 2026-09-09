@@ -1,8 +1,56 @@
-.section {
+.resume {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 4rem; // compensa a navbar fixa
-  background-color: #db8471;
+  text-align: center;
+  padding: 6rem 2rem;
+
+  &__title {
+    font-size: 2rem;
+    color: var(--color5);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__quote {
+    font-style: italic;
+    color: var(--color4);
+    margin-bottom: 2.5rem;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.15s, opacity 0.15s;
+
+  &:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+
+  &--filled {
+    background-color: var(--color3);
+    color: var(--color1);
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: var(--color5);
+    border: 2px solid var(--color4);
+  }
 }
