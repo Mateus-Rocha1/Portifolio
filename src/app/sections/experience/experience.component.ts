@@ -23,7 +23,7 @@ export class ExperienceComponent {
       descricao: 'Desenvolvimento de uma plataforma SaaS para ensino de línguas estrangeiras, utilizando Spring Boot, Angular, Docker e serviços AWS como Cognito e S3.Atuação inicial no backend e posterior expansão para desenvolvimento full-stack, incluindo funcionalidades de internacionalização e integração com serviços AWS.',
       historico: [
         { cargo: 'Desenvolvedor Backend', periodo: 'Março 2026 - Julho 2026' },
-        { cargo: 'Desenvolvedor Full-stack', periodo: 'Julho 2026 - atual' }
+        { cargo: 'Desenvolvedor Full-stack', periodo: 'Julho 2026 - Setembro 2026' }
       ]
     },
 
